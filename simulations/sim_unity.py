@@ -175,22 +175,53 @@ def MeshRenderer():
 def MeshFilter():
     pass
 
-def Transform():
-    num = 1
-    target_object_id = 1
-
+def Rigidbody(id_this: int, id_target: int, mass=1, linear_drag=0,
+               angular_drag=0.05, center_of_mass=[0, 0, 0],):
     setting = f"""
---- !u!4 &{num}
+--- !u!54 &{id_this}
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {{fileID: 0}}
+  m_PrefabInstance: {{fileID: 0}}
+  m_PrefabAsset: {{fileID: 0}}
+  m_GameObject: {{fileID: {id_target}}}
+  serializedVersion: 4
+  m_Mass: {mass}
+  m_Drag: {linear_drag}
+  m_AngularDrag: {angular_drag}
+  m_CenterOfMass: {{x: {center_of_mass[0]}, y: {center_of_mass[1]}, z: {center_of_mass[2]}}}
+  m_InertiaTensor: {{x: 1, y: 1, z: 1}}
+  m_InertiaRotation: {{x: 0, y: 0, z: 0, w: 1}}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+"""
+    return setting
+
+def Transform(id_this: int, id_target: int, position: tuple[int, int, int],
+              rotation: tuple[int, int, int, int], scale: tuple[int, int, int])-> str:
+    setting = f"""
+--- !u!4 &{id_this}
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {{fileID: 0}}
   m_PrefabInstance: {{fileID: 0}}
   m_PrefabAsset: {{fileID: 0}}
-  m_GameObject: {{fileID: {target_object_id}}}
+  m_GameObject: {{fileID: {id_target}}}
   serializedVersion: 2
-  m_LocalRotation: {{x: 0, y: 0, z: 0, w: 1}}
-  m_LocalPosition: {{x: 0, y: 0, z: 0}}
-  m_LocalScale: {{x: 1, y: 1, z: 1}}
+  m_LocalRotation: {{x: {rotation[0]}, y: {rotation[1]}, z: {rotation[2]}, w: {rotation[3]}}}
+  m_LocalPosition: {{x: {position[0]}, y: {position[1]}, z: {position[2]}}}
+  m_LocalScale: {{x: {scale[0]}, y: {scale[1]}, z: {scale[2]}}}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {{fileID: 0}}
@@ -300,9 +331,10 @@ Transform:
   m_LocalEulerAnglesHint: {{x: 50, y: -30, z: 0}}
 """
     return setting, transform_id_num
+# we don't need to return the transform id number because it is a constant value.
 
-def add_camera()-> tuple[str, int]:
-    transform_id_num = 963194228
+def add_camera(position=[0, 1, -10], rotation=[0, 0, 0, 0], scale=[1, 1, 1])-> tuple[str, int]:
+    transform_id_num = 963194227
     setting = f"""
 --- !u!1 &963194225
 GameObject:
@@ -312,7 +344,6 @@ GameObject:
   m_PrefabAsset: {{fileID: 0}}
   serializedVersion: 6
   m_Component:
-  - component: {{fileID: 963194228}}
   - component: {{fileID: 963194227}}
   - component: {{fileID: 963194226}}
   m_Layer: 0
@@ -323,14 +354,6 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!81 &963194226
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {{fileID: 0}}
-  m_PrefabInstance: {{fileID: 0}}
-  m_PrefabAsset: {{fileID: 0}}
-  m_GameObject: {{fileID: 963194225}}
-  m_Enabled: 1
---- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {{fileID: 0}}
@@ -381,7 +404,7 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &963194228
+--- !u!4 &963194227
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {{fileID: 0}}
@@ -389,16 +412,15 @@ Transform:
   m_PrefabAsset: {{fileID: 0}}
   m_GameObject: {{fileID: 963194225}}
   serializedVersion: 2
-  m_LocalRotation: {{x: 0, y: 0, z: 0, w: 1}}
-  m_LocalPosition: {{x: 0, y: 1, z: -10}}
-  m_LocalScale: {{x: 1, y: 1, z: 1}}
+  m_LocalRotation: {{x: {rotation[0]}, y: {rotation[1]}, z: {rotation[2]}, w: {rotation[3]}}}
+  m_LocalPosition: {{x: {position[0]}, y: {position[1]}, z: {position[2]}}}
+  m_LocalScale: {{x: {scale[0]}, y: {scale[1]}, z: {scale[2]}}}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {{fileID: 0}}
   m_LocalEulerAnglesHint: {{x: 0, y: 0, z: 0}}
 """
     return setting, transform_id_num
-# TODO: add component for x,y,z, rotation, scale, and other properties for transform.
 
 # transform conponet goes to this list. Make a priority for components.
 def SceneRoots(object_id_list: list)-> str:
@@ -413,5 +435,3 @@ SceneRoots:
 
     return setting
 # camera->light->gameobject
-
-print(Transform())
