@@ -3,8 +3,7 @@ from random import randint
 dict_yaml_class_id_reference = {'AimConstraint': 895512359, 'AnchoredJoint2D': 229, 'AndroidAssetPackImporter': 1736697216, 'Animation': 111, 'AnimationClip': 74, 'Animator': 95, 'AnimatorController': 91, 'AnimatorOverrideController': 221, 'AnimatorState': 1102, 'AnimatorStateMachine': 1107, 'AnimatorStateTransition': 1101, 'AnimatorTransition': 1109, 'AnimatorTransitionBase': 1111, 'AnnotationManager': 1049, 'AreaEffector2D': 249, 'ArticulationBody': 171741748, 'AssemblyDefinitionAsset': 1152215463, 'AssemblyDefinitionImporter': 1766753193, 'AssemblyDefinitionReferenceAsset': 662584278, 'AssemblyDefinitionReferenceImporter': 294290339, 'AssetBundle': 142, 'AssetBundleManifest': 290, 'AssetImporter': 1003, 'AssetImportInProgressProxy': 369655926, 'AssetMetaData': 1028, 'AudioBehaviour': 180, 'AudioBuildInfo': 641289076, 'AudioChorusFilter': 166, 'AudioClip': 83, 'AudioDistortionFilter': 170, 'AudioEchoFilter': 168, 'AudioFilter': 181, 'AudioHighPassFilter': 165, 'AudioImporter': 1020, 'AudioListener': 81, 'AudioLowPassFilter': 169, 'AudioManager': 11, 'AudioMixer': 240, 'AudioMixerController': 241, 'AudioMixerEffectController': 244, 'AudioMixerGroup': 273, 'AudioMixerGroupController': 243, 'AudioMixerLiveUpdateBool': 100009, 'AudioMixerLiveUpdateFloat': 100008, 'AudioMixerSnapshot': 272, 'AudioMixerSnapshotController': 245, 'AudioReverbFilter': 164, 'AudioReverbZone': 167, 'AudioSource': 82, 'Avatar': 90, 'AvatarMask': 319, 'BaseAnimationTrack': 110, 'BaseVideoTexture': 237, 'Behaviour': 8, 'BillboardAsset': 226, 'BillboardRenderer': 227, 'BlendTree': 206, 'bool': 100001, 'BoxCollider': 65, 'BoxCollider2D': 61, 'BrokenPrefabAsset': 1731078267, 'BuildReport': 1125, 'BuildSettings': 141, 'BuiltAssetBundleInfoSet': 668709126, 'BuoyancyEffector2D': 253, 'C4DImporter': 1541671625, 'CachedSpriteAtlas': 214, 'CachedSpriteAtlasRuntimeData': 644342135, 'Camera': 20, 'Canvas': 223, 'CanvasGroup': 225, 'CanvasRenderer': 222, 'CapsuleCollider': 136, 'CapsuleCollider2D': 70, 'CharacterController': 143, 'CharacterJoint': 144, 'CircleCollider2D': 58, 'Cloth': 183, 'ClusterInputManager': 236, 'Collider': 56, 'Collider2D': 53, 'Collision': 100004, 'Collision2D': 100007, 'Component': 2, 'CompositeCollider2D': 66, 'ComputeShader': 72, 'ComputeShaderImporter': 1008, 'ConfigurableJoint': 153, 'ConstantForce': 75, 'ConstantForce2D': 247, 'Cubemap': 89, 'CubemapArray': 188, 'CustomCollider2D': 893571522, 'CustomRenderTexture': 86, 'DefaultAsset': 1029, 'DefaultImporter': 1030, 'DelayedCallManager': 98, 'DistanceJoint2D': 232, 'EdgeCollider2D': 68, 'EditorBuildSettings': 1045, 'EditorExtension': 18, 'EditorExtensionImpl': 1002, 'EditorProjectAccess': 426301858, 'EditorSettings': 159, 'EditorUserBuildSettings': 1051, 'EditorUserSettings': 162, 'Effector2D': 248, 'FBXImporter': 1041, 'FixedJoint': 138, 'FixedJoint2D': 255, 'Flare': 121, 'FlareLayer': 124, 'float': 100002, 'Font': 128, 'FrictionJoint2D': 256, 'GameManager': 9, 'GameObject': 1, 'GameObjectRecorder': 1268269756, 'GlobalGameManager': 6, 'GraphicsSettings': 30, 'Grid': 156049354, 'GridLayout': 1742807556, 'Halo': 122, 'HierarchyState': 1026, 'HingeJoint': 59, 'HingeJoint2D': 233, 'HumanTemplate': 1105, 'IConstraint': 285090594, 'IHVImageFormatImporter': 1055, 'ImportLog': 41386430, 'InputManager': 13, 'InspectorExpandedState': 1048, 'int': 100000, 'Joint': 57, 'Joint2D': 230, 'LensFlare': 123, 'LevelGameManager': 3, 'LibraryAssetImporter': 1038, 'Light': 108, 'LightingDataAsset': 1120, 'LightingDataAssetParent': 1325145578, 'LightingSettings': 850595691, 'LightmapParameters': 1113, 'LightmapSettings': 157, 'LightProbeGroup': 220, 'LightProbeProxyVolume': 259, 'LightProbes': 258, 'LineRenderer': 120, 'LocalizationAsset': 2083778819, 'LocalizationImporter': 1027052791, 'LODGroup': 205, 'LookAtConstraint': 1183024399, 'LowerResBlitTexture': 1480428607, 'Material': 21, 'MemorySettings': 387306366, 'Mesh': 43, 'Mesh3DSImporter': 1005, 'MeshCollider': 64, 'MeshFilter': 33, 'MeshRenderer': 23, 'ModelImporter': 1040, 'MonoBehaviour': 114, 'MonoImporter': 1035, 'MonoManager': 116, 'MonoObject': 100003, 'MonoScript': 115, 'Motion': 207, 'MovieTexture': 152, 'MultiArtifactTestImporter': 1223240404, 'NamedObject': 130, 'NativeFormatImporter': 1034, 'NavMeshAgent': 195, 'NavMeshData': 238, 'NavMeshObstacle': 208, 'NavMeshProjectSettings': 126, 'NavMeshSettings': 196, 'NewAnimationTrack': 118, 'Object': 0, 'OcclusionArea': 192, 'OcclusionCullingData': 363, 'OcclusionCullingSettings': 29, 'OcclusionPortal': 41, 'OffMeshLink': 191, 'PackageManifest': 1896753125, 'PackageManifestImporter': 1896753126, 'PackedAssets': 1126, 'ParentConstraint': 1773428102, 'ParticleSystem': 198, 'ParticleSystemForceField': 330, 'ParticleSystemRenderer': 199, 'PhysicMaterial': 134, 'Physics2DSettings': 19, 'PhysicsManager': 55, 'PhysicsMaterial2D': 62, 'PhysicsUpdateBehaviour2D': 246, 'PlatformEffector2D': 251, 'PlatformModuleSetup': 877146078, 'PlayableDirector': 320, 'PlayerSettings': 129, 'PluginBuildInfo': 382020655, 'PluginImporter': 1050, 'PointEffector2D': 250, 'Polygon2D': 100010, 'PolygonCollider2D': 60, 'PositionConstraint': 1818360608, 'Prefab': 1001480554, 'PrefabImporter': 468431735, 'PrefabInstance': 1001, 'PreloadData': 150, 'Preset': 181963792, 'PresetManager': 1386491679, 'PreviewAnimationClip': 1108, 'PreviewImporter': 815301076, 'ProceduralMaterial': 185, 'ProceduralTexture': 186, 'Projector': 119, 'QualitySettings': 47, 'RayTracingShader': 825902497, 'RayTracingShaderImporter': 747330370, 'RectTransform': 224, 'ReferencesArtifactGenerator': 1114811875, 'ReflectionProbe': 215, 'RelativeJoint2D': 254, 'Renderer': 25, 'RenderSettings': 104, 'RenderTexture': 84, 'ResourceManager': 147, 'Rigidbody': 54, 'Rigidbody2D': 50, 'RootMotionData': 100006, 'RoslynAdditionalFileAsset': 1597193336, 'RoslynAdditionalFileImporter': 1642787288, 'RoslynAnalyzerConfigAsset': 947337230, 'RoslynAnalyzerConfigImporter': 1903396204, 'RotationConstraint': 1818360609, 'RuleSetFileAsset': 954905827, 'RuleSetFileImporter': 1777034230, 'RuntimeAnimatorController': 93, 'RuntimeInitializeOnLoadManager': 300, 'SampleClip': 271, 'ScaleConstraint': 1818360610, 'SceneAsset': 1032, 'SceneRoots': 1660057539, 'ScenesUsingAssets': 156483287, 'SceneVisibilityState': 1154873562, 'ScriptedImporter': 2089858483, 'Shader': 48, 'ShaderContainer': 1557264870, 'ShaderImporter': 1007, 'ShaderInclude': 109, 'ShaderIncludeImporter': 2103361453, 'ShaderNameRegistry': 94, 'ShaderVariantCollection': 200, 'SketchUpImporter': 1124, 'SkinnedMeshRenderer': 137, 'Skybox': 45, 'SliderJoint2D': 234, 'SortingGroup': 210, 'SparseTexture': 171, 'SpeedTreeImporter': 1110, 'SpeedTreeWindAsset': 228, 'SphereCollider': 135, 'SpringJoint': 145, 'SpringJoint2D': 231, 'Sprite': 213, 'SpriteAtlas': 687078895, 'SpriteAtlasAsset': 612988286, 'SpriteAtlasDatabase': 638013454, 'SpriteAtlasImporter': 1210832254, 'SpriteMask': 331, 'SpriteRenderer': 212, 'SpriteShapeRenderer': 1971053207, 'StreamingController': 1542919678, 'StreamingManager': 1403656975, 'SubstanceArchive': 184, 'SubstanceImporter': 1112, 'SurfaceEffector2D': 252, 'TagManager': 78, 'TargetJoint2D': 257, 'Terrain': 218, 'TerrainCollider': 154, 'TerrainData': 156, 'TerrainLayer': 1953259897, 'TextAsset': 49, 'TextMesh': 102, 'TextScriptImporter': 1031, 'Texture': 27, 'Texture2D': 28, 'Texture2DArray': 187, 'Texture3D': 117, 'TextureImporter': 1006, 'Tilemap': 1839735485, 'TilemapCollider2D': 19719996, 'TilemapRenderer': 483693784, 'TimeManager': 5, 'TrailRenderer': 96, 'Transform': 4, 'Tree': 193, 'TrueTypeFontImporter': 1042, 'UnityConnectSettings': 310, 'Vector3f': 100005, 'VersionControlSettings': 890905787, 'VFXManager': 937362698, 'VFXRenderer': 73398921, 'VideoBuildInfo': 1521398425, 'VideoClip': 329, 'VideoClipImporter': 1127, 'VideoPlayer': 328, 'VisualEffect': 2083052967, 'VisualEffectAsset': 2058629509, 'VisualEffectImporter': 2058629510, 'VisualEffectObject': 2059678085, 'VisualEffectResource': 2058629511, 'VisualEffectSubgraph': 994735392, 'VisualEffectSubgraphBlock': 994735404, 'VisualEffectSubgraphOperator': 994735403, 'void': 100011, 'WebCamTexture': 158, 'WheelCollider': 146, 'WheelJoint2D': 235, 'WindZone': 182}
 '''
 Unity classes have unique IDs for YAML file format.
-
-This dictionary is used to convert class names to their respective IDs.
+This dictionary will be used to convert class names to their respective IDs.
 '''
 
 def init()-> str:
@@ -12,6 +11,13 @@ def init()-> str:
 %TAG !u! tag:unity3d.com,2011:
 """
     return start_tag
+"""
+This function returns the start tag of the YAML file.
+Unity YAML files MUST start with the following lines.
+  
+return: 
+  str: start tag of the YAML file.
+"""
 
 def OcclusionCullingSettings()-> str:
     setting = f"""--- !u!29 &1
@@ -26,6 +32,14 @@ OcclusionCullingSettings:
   m_OcclusionCullingData: {{fileID: 0}}
 """
     return setting
+"""
+This function returns the YAML setting for OcclusionCullingSettings.
+* the number next to "!u!" is the ID of the class.
+* the number next to "&" is the ID of the object in YAML file.
+
+return:
+  str: YAML setting for OcclusionCullingSettings.
+"""
 
 def RenderSettings()-> str:
     setting = f"""--- !u!104 &2
@@ -59,6 +73,12 @@ RenderSettings:
   m_UseRadianceAmbientProbe: 0
 """
     return setting
+"""
+This function returns the YAML setting for RenderSettings.
+
+return:
+  str: YAML setting for RenderSettings.
+"""
 
 def LightmapSettings()-> str:
     setting = f"""--- !u!157 &3
@@ -119,6 +139,12 @@ LightmapSettings:
   m_LightingSettings: {{fileID: 0}}
 """
     return setting
+"""
+This function returns the YAML setting for LightmapSettings.
+
+return:
+  str: YAML setting for LightmapSettings.
+"""
 
 def NavMeshSettings()-> str:
     setting = f"""--- !u!196 &4
@@ -147,10 +173,21 @@ NavMeshSettings:
   m_NavMeshData: {{fileID: 0}}
 """
     return setting
+"""
+This function returns the YAML setting for NavMeshSettings.
+
+return:
+  str: YAML setting for NavMeshSettings.
+"""
     
 ##########################
 # default scene settings #
 ##########################
+
+def add_cube():
+    pass
+# TODO: implement another function to add a 3d object.
+# ex) cube, capsule, cyclinder, plane, quad, etc.
 
 def add_sphere(name: str, mesh_id=10207,
                radius=0.5, center=[0, 0, 0], 
@@ -176,8 +213,32 @@ def add_sphere(name: str, mesh_id=10207,
         setting += Rigidbody(id_this, id_target, mass, linear_drag, angular_drag, center_of_mass)
         id_this += 1
     setting += Transform(id_this, id_target, position, rotation, scale)
+    # TODO: implement the case when another component is added.
+    # ex) anthor property of physics?
 
     return setting, id_this
+"""
+This function makes the YAML setting for a sphere object.
+Default sphere has 4 components: SphereCollider, MeshRenderer, MeshFilter, Transform.
+For test, Rigidbody component is added.
+
+param:
+  1st line: name: str - name of the sphere object.
+            mesh_id: int - ID of the mesh object. (sphere mesh)
+  2nd line: radius: float - radius of the sphere.
+            center: list[int] - center of the sphere.
+  3rd line: position: list[int] - position of the sphere.
+            rotation: list[int] - rotation of the sphere.
+            scale: list[int] - scale of the sphere.
+  4th line: has_rigidbody_component: bool - whether the sphere has Rigidbody component.
+            mass: float - mass of the sphere.
+            linear_drag: float - linear drag of the sphere.
+            angular_drag: float - angular drag of the sphere.
+
+return:
+  setting: str - YAML setting for the sphere object.
+  id_this: int - ID of the "Transform" component for SceneRoots.
+"""
 
 def GameObject(id_target: int, name: str, num_of_component: int)-> str:
     setting = f"""--- !u!1 &{id_target}
@@ -201,6 +262,17 @@ GameObject:
   m_IsActive: 1
 """
     return setting
+"""
+This function makes the YAML setting for a GameObject.
+
+param:
+  id_target: int - ID of THIS GameObject.
+  name: str - name of the GameObject.
+  num_of_component: int - number of components in the GameObject.
+
+return:
+  setting: str - YAML setting for the GameObject.
+"""
 
 def SphereCollider(id_this: int, id_target: int, radius=0.5, center=[0, 0, 0])-> str:
     setting = f"""--- !u!135 &{id_this}
@@ -226,6 +298,18 @@ SphereCollider:
   m_Center: {{x: {center[0]}, y: {center[1]}, z: {center[2]}}}
 """
     return setting
+"""
+This function makes the YAML setting for a SphereCollider.
+
+param:
+  id_this: int - ID of THIS SphereCollider.
+  id_target: int - ID of the GameObject.
+  radius: float - radius of the sphere.
+  center: list[int] - center of the sphere.
+
+return:
+  setting: str - YAML setting for a SphereCollider.
+"""
 
 def MeshRenderer(id_this: int, id_target: int):
     setting = f"""--- !u!23 &{id_this}
@@ -275,8 +359,19 @@ MeshRenderer:
   m_AdditionalVertexStreams: {{fileID: 0}}
 """
     return setting
+"""
+This function makes the YAML setting for a MeshRenderer.
+
+param:
+  id_this: int - ID of THIS MeshRenderer.
+  id_target: int - ID of the GameObject.
+
+return:
+  setting: str - YAML setting for a MeshRenderer.
+"""
 
 def MeshFilter(id_this: int, id_target: int, mesh_id: int):
+    # TODO: edit mesh in this functoin?
     setting = f"""--- !u!33 &{id_this}
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -287,6 +382,17 @@ MeshFilter:
   m_Mesh: {{fileID: {mesh_id}, guid: 0000000000000000e000000000000000, type: 0}}
 """
     return setting
+"""
+This function makes the YAML setting for a MeshFilter.
+
+param:
+  id_this: int - ID of THIS MeshFilter.
+  id_target: int - ID of the GameObject.
+  mesh_id: int - ID of the mesh object.
+
+return:
+  setting: str - YAML setting for a MeshFilter.
+"""
 
 def Rigidbody(id_this: int, id_target: int, mass=1, linear_drag=0,
                angular_drag=0.05, center_of_mass=[0, 0, 0],):
@@ -320,6 +426,20 @@ Rigidbody:
 """
     ##TODO: case of Constraints?
     return setting
+"""
+This function makes the YAML setting for a Rigidbody.
+
+param:
+  id_this: int - ID of THIS Rigidbody.
+  id_target: int - ID of the GameObject.
+  mass: float - mass of the Rigidbody.
+  linear_drag: float - linear drag of the Rigidbody.
+  angular_drag: float - angular drag of the Rigidbody.
+  center_of_mass: list[int] - center of mass of the Rigidbody.
+
+return:
+  setting: str - YAML setting for a Rigidbody.
+"""
 
 def Transform(id_this: int, id_target: int, position: list[int],
               rotation: list[int], scale: list[int])-> str:
@@ -340,6 +460,19 @@ Transform:
   m_LocalEulerAnglesHint: {{x: 0, y: 0, z: 0}}
 """
     return setting
+"""
+This function makes the YAML setting for a Transform.
+
+param:
+  id_this: int - ID of THIS Transform.
+  id_target: int - ID of the GameObject.
+  position: list[int] - position of the object.
+  rotation: list[int] - rotation of the object.
+  scale: list[int] - scale of the object.
+
+return:
+  setting: str - YAML setting for a Transform.
+"""
 
 def add_light()-> tuple[str, int]:
     transform_id_num = 705507995
@@ -442,7 +575,13 @@ Transform:
   m_LocalEulerAnglesHint: {{x: 50, y: -30, z: 0}}
 """
     return setting, transform_id_num
-# we don't need to return the transform id number because it is a constant value.
+"""
+This function makes the YAML setting for a Light object.
+
+return:
+  setting: str - YAML setting for a Light object.
+  transform_id_num: int - ID of the "Transform" component for Light object.
+"""
 
 def add_camera(position=[0, 1, -10], rotation=[0, 0, 0, 0], scale=[1, 1, 1])-> tuple[str, int]:
     transform_id_num = 1648527734
@@ -540,6 +679,13 @@ Transform:
   m_LocalEulerAnglesHint: {{x: 0, y: 0, z: 0}}
 """
     return setting, transform_id_num
+"""
+This function makes the YAML setting for a Camera object.
+
+return:
+  setting: str - YAML setting for a Camera object.
+  transform_id_num: int - ID of the "Transform" component for Camera object.
+"""
 
 # transform conponet goes to this list. Make a priority for components.
 def SceneRoots(object_id_list: list)-> str:
@@ -552,8 +698,17 @@ SceneRoots:
         setting += f"  - {{fileID: {num}}}\n"
 
     return setting
-# camera->light->gameobject
+"""
+This function makes the YAML setting for SceneRoots.
 
+param:
+  object_id_list: list[int] - list of IDs of the objects in the scene. This should be in the order of the components.
+
+return:
+  setting: str - YAML setting for SceneRoots.
+"""
+
+# test simple scene
 if __name__ == "__main__":
     id_list: list[int] = []
     with open("result.unity", "w", encoding='utf-8') as f:
