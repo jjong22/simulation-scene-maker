@@ -1,4 +1,4 @@
-import yaml
+from random import randint
 
 dict_yaml_class_id_reference = {'AimConstraint': 895512359, 'AnchoredJoint2D': 229, 'AndroidAssetPackImporter': 1736697216, 'Animation': 111, 'AnimationClip': 74, 'Animator': 95, 'AnimatorController': 91, 'AnimatorOverrideController': 221, 'AnimatorState': 1102, 'AnimatorStateMachine': 1107, 'AnimatorStateTransition': 1101, 'AnimatorTransition': 1109, 'AnimatorTransitionBase': 1111, 'AnnotationManager': 1049, 'AreaEffector2D': 249, 'ArticulationBody': 171741748, 'AssemblyDefinitionAsset': 1152215463, 'AssemblyDefinitionImporter': 1766753193, 'AssemblyDefinitionReferenceAsset': 662584278, 'AssemblyDefinitionReferenceImporter': 294290339, 'AssetBundle': 142, 'AssetBundleManifest': 290, 'AssetImporter': 1003, 'AssetImportInProgressProxy': 369655926, 'AssetMetaData': 1028, 'AudioBehaviour': 180, 'AudioBuildInfo': 641289076, 'AudioChorusFilter': 166, 'AudioClip': 83, 'AudioDistortionFilter': 170, 'AudioEchoFilter': 168, 'AudioFilter': 181, 'AudioHighPassFilter': 165, 'AudioImporter': 1020, 'AudioListener': 81, 'AudioLowPassFilter': 169, 'AudioManager': 11, 'AudioMixer': 240, 'AudioMixerController': 241, 'AudioMixerEffectController': 244, 'AudioMixerGroup': 273, 'AudioMixerGroupController': 243, 'AudioMixerLiveUpdateBool': 100009, 'AudioMixerLiveUpdateFloat': 100008, 'AudioMixerSnapshot': 272, 'AudioMixerSnapshotController': 245, 'AudioReverbFilter': 164, 'AudioReverbZone': 167, 'AudioSource': 82, 'Avatar': 90, 'AvatarMask': 319, 'BaseAnimationTrack': 110, 'BaseVideoTexture': 237, 'Behaviour': 8, 'BillboardAsset': 226, 'BillboardRenderer': 227, 'BlendTree': 206, 'bool': 100001, 'BoxCollider': 65, 'BoxCollider2D': 61, 'BrokenPrefabAsset': 1731078267, 'BuildReport': 1125, 'BuildSettings': 141, 'BuiltAssetBundleInfoSet': 668709126, 'BuoyancyEffector2D': 253, 'C4DImporter': 1541671625, 'CachedSpriteAtlas': 214, 'CachedSpriteAtlasRuntimeData': 644342135, 'Camera': 20, 'Canvas': 223, 'CanvasGroup': 225, 'CanvasRenderer': 222, 'CapsuleCollider': 136, 'CapsuleCollider2D': 70, 'CharacterController': 143, 'CharacterJoint': 144, 'CircleCollider2D': 58, 'Cloth': 183, 'ClusterInputManager': 236, 'Collider': 56, 'Collider2D': 53, 'Collision': 100004, 'Collision2D': 100007, 'Component': 2, 'CompositeCollider2D': 66, 'ComputeShader': 72, 'ComputeShaderImporter': 1008, 'ConfigurableJoint': 153, 'ConstantForce': 75, 'ConstantForce2D': 247, 'Cubemap': 89, 'CubemapArray': 188, 'CustomCollider2D': 893571522, 'CustomRenderTexture': 86, 'DefaultAsset': 1029, 'DefaultImporter': 1030, 'DelayedCallManager': 98, 'DistanceJoint2D': 232, 'EdgeCollider2D': 68, 'EditorBuildSettings': 1045, 'EditorExtension': 18, 'EditorExtensionImpl': 1002, 'EditorProjectAccess': 426301858, 'EditorSettings': 159, 'EditorUserBuildSettings': 1051, 'EditorUserSettings': 162, 'Effector2D': 248, 'FBXImporter': 1041, 'FixedJoint': 138, 'FixedJoint2D': 255, 'Flare': 121, 'FlareLayer': 124, 'float': 100002, 'Font': 128, 'FrictionJoint2D': 256, 'GameManager': 9, 'GameObject': 1, 'GameObjectRecorder': 1268269756, 'GlobalGameManager': 6, 'GraphicsSettings': 30, 'Grid': 156049354, 'GridLayout': 1742807556, 'Halo': 122, 'HierarchyState': 1026, 'HingeJoint': 59, 'HingeJoint2D': 233, 'HumanTemplate': 1105, 'IConstraint': 285090594, 'IHVImageFormatImporter': 1055, 'ImportLog': 41386430, 'InputManager': 13, 'InspectorExpandedState': 1048, 'int': 100000, 'Joint': 57, 'Joint2D': 230, 'LensFlare': 123, 'LevelGameManager': 3, 'LibraryAssetImporter': 1038, 'Light': 108, 'LightingDataAsset': 1120, 'LightingDataAssetParent': 1325145578, 'LightingSettings': 850595691, 'LightmapParameters': 1113, 'LightmapSettings': 157, 'LightProbeGroup': 220, 'LightProbeProxyVolume': 259, 'LightProbes': 258, 'LineRenderer': 120, 'LocalizationAsset': 2083778819, 'LocalizationImporter': 1027052791, 'LODGroup': 205, 'LookAtConstraint': 1183024399, 'LowerResBlitTexture': 1480428607, 'Material': 21, 'MemorySettings': 387306366, 'Mesh': 43, 'Mesh3DSImporter': 1005, 'MeshCollider': 64, 'MeshFilter': 33, 'MeshRenderer': 23, 'ModelImporter': 1040, 'MonoBehaviour': 114, 'MonoImporter': 1035, 'MonoManager': 116, 'MonoObject': 100003, 'MonoScript': 115, 'Motion': 207, 'MovieTexture': 152, 'MultiArtifactTestImporter': 1223240404, 'NamedObject': 130, 'NativeFormatImporter': 1034, 'NavMeshAgent': 195, 'NavMeshData': 238, 'NavMeshObstacle': 208, 'NavMeshProjectSettings': 126, 'NavMeshSettings': 196, 'NewAnimationTrack': 118, 'Object': 0, 'OcclusionArea': 192, 'OcclusionCullingData': 363, 'OcclusionCullingSettings': 29, 'OcclusionPortal': 41, 'OffMeshLink': 191, 'PackageManifest': 1896753125, 'PackageManifestImporter': 1896753126, 'PackedAssets': 1126, 'ParentConstraint': 1773428102, 'ParticleSystem': 198, 'ParticleSystemForceField': 330, 'ParticleSystemRenderer': 199, 'PhysicMaterial': 134, 'Physics2DSettings': 19, 'PhysicsManager': 55, 'PhysicsMaterial2D': 62, 'PhysicsUpdateBehaviour2D': 246, 'PlatformEffector2D': 251, 'PlatformModuleSetup': 877146078, 'PlayableDirector': 320, 'PlayerSettings': 129, 'PluginBuildInfo': 382020655, 'PluginImporter': 1050, 'PointEffector2D': 250, 'Polygon2D': 100010, 'PolygonCollider2D': 60, 'PositionConstraint': 1818360608, 'Prefab': 1001480554, 'PrefabImporter': 468431735, 'PrefabInstance': 1001, 'PreloadData': 150, 'Preset': 181963792, 'PresetManager': 1386491679, 'PreviewAnimationClip': 1108, 'PreviewImporter': 815301076, 'ProceduralMaterial': 185, 'ProceduralTexture': 186, 'Projector': 119, 'QualitySettings': 47, 'RayTracingShader': 825902497, 'RayTracingShaderImporter': 747330370, 'RectTransform': 224, 'ReferencesArtifactGenerator': 1114811875, 'ReflectionProbe': 215, 'RelativeJoint2D': 254, 'Renderer': 25, 'RenderSettings': 104, 'RenderTexture': 84, 'ResourceManager': 147, 'Rigidbody': 54, 'Rigidbody2D': 50, 'RootMotionData': 100006, 'RoslynAdditionalFileAsset': 1597193336, 'RoslynAdditionalFileImporter': 1642787288, 'RoslynAnalyzerConfigAsset': 947337230, 'RoslynAnalyzerConfigImporter': 1903396204, 'RotationConstraint': 1818360609, 'RuleSetFileAsset': 954905827, 'RuleSetFileImporter': 1777034230, 'RuntimeAnimatorController': 93, 'RuntimeInitializeOnLoadManager': 300, 'SampleClip': 271, 'ScaleConstraint': 1818360610, 'SceneAsset': 1032, 'SceneRoots': 1660057539, 'ScenesUsingAssets': 156483287, 'SceneVisibilityState': 1154873562, 'ScriptedImporter': 2089858483, 'Shader': 48, 'ShaderContainer': 1557264870, 'ShaderImporter': 1007, 'ShaderInclude': 109, 'ShaderIncludeImporter': 2103361453, 'ShaderNameRegistry': 94, 'ShaderVariantCollection': 200, 'SketchUpImporter': 1124, 'SkinnedMeshRenderer': 137, 'Skybox': 45, 'SliderJoint2D': 234, 'SortingGroup': 210, 'SparseTexture': 171, 'SpeedTreeImporter': 1110, 'SpeedTreeWindAsset': 228, 'SphereCollider': 135, 'SpringJoint': 145, 'SpringJoint2D': 231, 'Sprite': 213, 'SpriteAtlas': 687078895, 'SpriteAtlasAsset': 612988286, 'SpriteAtlasDatabase': 638013454, 'SpriteAtlasImporter': 1210832254, 'SpriteMask': 331, 'SpriteRenderer': 212, 'SpriteShapeRenderer': 1971053207, 'StreamingController': 1542919678, 'StreamingManager': 1403656975, 'SubstanceArchive': 184, 'SubstanceImporter': 1112, 'SurfaceEffector2D': 252, 'TagManager': 78, 'TargetJoint2D': 257, 'Terrain': 218, 'TerrainCollider': 154, 'TerrainData': 156, 'TerrainLayer': 1953259897, 'TextAsset': 49, 'TextMesh': 102, 'TextScriptImporter': 1031, 'Texture': 27, 'Texture2D': 28, 'Texture2DArray': 187, 'Texture3D': 117, 'TextureImporter': 1006, 'Tilemap': 1839735485, 'TilemapCollider2D': 19719996, 'TilemapRenderer': 483693784, 'TimeManager': 5, 'TrailRenderer': 96, 'Transform': 4, 'Tree': 193, 'TrueTypeFontImporter': 1042, 'UnityConnectSettings': 310, 'Vector3f': 100005, 'VersionControlSettings': 890905787, 'VFXManager': 937362698, 'VFXRenderer': 73398921, 'VideoBuildInfo': 1521398425, 'VideoClip': 329, 'VideoClipImporter': 1127, 'VideoPlayer': 328, 'VisualEffect': 2083052967, 'VisualEffectAsset': 2058629509, 'VisualEffectImporter': 2058629510, 'VisualEffectObject': 2059678085, 'VisualEffectResource': 2058629511, 'VisualEffectSubgraph': 994735392, 'VisualEffectSubgraphBlock': 994735404, 'VisualEffectSubgraphOperator': 994735403, 'void': 100011, 'WebCamTexture': 158, 'WheelCollider': 146, 'WheelJoint2D': 235, 'WindZone': 182}
 '''
@@ -8,14 +8,13 @@ This dictionary is used to convert class names to their respective IDs.
 '''
 
 def init()-> str:
-    start_tag = f"""
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:"""
+    start_tag = f"""%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+"""
     return start_tag
 
 def OcclusionCullingSettings()-> str:
-    setting = f"""
---- !u!29 &1
+    setting = f"""--- !u!29 &1
 OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -29,8 +28,7 @@ OcclusionCullingSettings:
     return setting
 
 def RenderSettings()-> str:
-    setting = f"""
---- !u!104 &2
+    setting = f"""--- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
@@ -63,8 +61,7 @@ RenderSettings:
     return setting
 
 def LightmapSettings()-> str:
-    setting = f"""
---- !u!157 &3
+    setting = f"""--- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 13
@@ -124,8 +121,7 @@ LightmapSettings:
     return setting
 
 def NavMeshSettings()-> str:
-    setting = f"""
---- !u!196 &4
+    setting = f"""--- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
@@ -156,29 +152,145 @@ NavMeshSettings:
 # default scene settings #
 ##########################
 
-def add_object():
-    pass
-# TODO: How could be simplified the process of adding a new GameObject?
+def add_sphere(name: str, mesh_id=10207,
+               radius=0.5, center=[0, 0, 0], 
+               position=[0, 0, 0], rotation=[0, 0, 0, 1], scale=[1, 1, 1],
+               has_rigidbody_component=True, mass=1, linear_drag=0, angular_drag=0.05, center_of_mass=[0, 0, 0])-> tuple[str, int]:
+    id_target = randint(0xffffff, 0x1fffffffffffffff)
+    id_this = id_target+1
 
-def GameObject():
-    pass
+    num_of_component = 4
+    if (has_rigidbody_component):
+        num_of_component += 1
+    ## TODO: implement the case when another component is added.
 
-def Camera():
-    pass
+    setting = f""""""
+    setting += GameObject(id_target, name, num_of_component)
+    setting += SphereCollider(id_this, id_target, radius, center)
+    id_this += 1
+    setting += MeshRenderer(id_this, id_target)
+    id_this += 1
+    setting += MeshFilter(id_this, id_target, mesh_id)
+    id_this += 1
+    if (has_rigidbody_component):
+        setting += Rigidbody(id_this, id_target, mass, linear_drag, angular_drag, center_of_mass)
+        id_this += 1
+    setting += Transform(id_this, id_target, position, rotation, scale)
 
-def SphereCollider():
-    pass
+    return setting, id_this
 
-def MeshRenderer():
-    pass
+def GameObject(id_target: int, name: str, num_of_component: int)-> str:
+    setting = f"""--- !u!1 &{id_target}
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {{fileID: 0}}
+  m_PrefabInstance: {{fileID: 0}}
+  m_PrefabAsset: {{fileID: 0}}
+  serializedVersion: 6
+  m_Component:
+"""
+    for i in range(num_of_component, 0, -1):
+        setting += f"""  - component: {{fileID: {id_target + i}}}
+"""
+    setting += f"""  m_Layer: 0
+  m_Name: {name}
+  m_TagString: Untagged
+  m_Icon: {{fileID: 0}}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+"""
+    return setting
 
-def MeshFilter():
-    pass
+def SphereCollider(id_this: int, id_target: int, radius=0.5, center=[0, 0, 0])-> str:
+    setting = f"""--- !u!135 &{id_this}
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {{fileID: 0}}
+  m_PrefabInstance: {{fileID: 0}}
+  m_PrefabAsset: {{fileID: 0}}
+  m_GameObject: {{fileID: {id_target}}}
+  m_Material: {{fileID: 0}}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: {radius}
+  m_Center: {{x: {center[0]}, y: {center[1]}, z: {center[2]}}}
+"""
+    return setting
+
+def MeshRenderer(id_this: int, id_target: int):
+    setting = f"""--- !u!23 &{id_this}
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {{fileID: 0}}
+  m_PrefabInstance: {{fileID: 0}}
+  m_PrefabAsset: {{fileID: 0}}
+  m_GameObject: {{fileID: {id_target}}}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {{fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {{fileID: 0}}
+  m_ProbeAnchor: {{fileID: 0}}
+  m_LightProbeVolumeOverride: {{fileID: 0}}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {{fileID: 0}}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {{fileID: 0}}
+"""
+    return setting
+
+def MeshFilter(id_this: int, id_target: int, mesh_id: int):
+    setting = f"""--- !u!33 &{id_this}
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {{fileID: 0}}
+  m_PrefabInstance: {{fileID: 0}}
+  m_PrefabAsset: {{fileID: 0}}
+  m_GameObject: {{fileID: {id_target}}}
+  m_Mesh: {{fileID: {mesh_id}, guid: 0000000000000000e000000000000000, type: 0}}
+"""
+    return setting
 
 def Rigidbody(id_this: int, id_target: int, mass=1, linear_drag=0,
                angular_drag=0.05, center_of_mass=[0, 0, 0],):
-    setting = f"""
---- !u!54 &{id_this}
+    setting = f"""--- !u!54 &{id_this}
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {{fileID: 0}}
@@ -203,15 +315,15 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 0
   m_CollisionDetection: 0
 """
+    ##TODO: case of Constraints?
     return setting
 
-def Transform(id_this: int, id_target: int, position: tuple[int, int, int],
-              rotation: tuple[int, int, int, int], scale: tuple[int, int, int])-> str:
-    setting = f"""
---- !u!4 &{id_this}
+def Transform(id_this: int, id_target: int, position: list[int],
+              rotation: list[int], scale: list[int])-> str:
+    setting = f"""--- !u!4 &{id_this}
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {{fileID: 0}}
@@ -231,8 +343,7 @@ Transform:
 
 def add_light()-> tuple[str, int]:
     transform_id_num = 705507995
-    setting = f"""
---- !u!1 &705507993
+    setting = f"""--- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {{fileID: 0}}
@@ -334,9 +445,8 @@ Transform:
 # we don't need to return the transform id number because it is a constant value.
 
 def add_camera(position=[0, 1, -10], rotation=[0, 0, 0, 0], scale=[1, 1, 1])-> tuple[str, int]:
-    transform_id_num = 963194227
-    setting = f"""
---- !u!1 &963194225
+    transform_id_num = 1648527734
+    setting = f"""--- !u!1 &1648527731
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {{fileID: 0}}
@@ -344,8 +454,9 @@ GameObject:
   m_PrefabAsset: {{fileID: 0}}
   serializedVersion: 6
   m_Component:
-  - component: {{fileID: 963194227}}
-  - component: {{fileID: 963194226}}
+  - component: {{fileID: 1648527734}}
+  - component: {{fileID: 1648527733}}
+  - component: {{fileID: 1648527732}}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -353,13 +464,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &963194226
+--- !u!81 &1648527732
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {{fileID: 0}}
+  m_PrefabInstance: {{fileID: 0}}
+  m_PrefabAsset: {{fileID: 0}}
+  m_GameObject: {{fileID: 1648527731}}
+  m_Enabled: 1
+--- !u!20 &1648527733
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {{fileID: 0}}
   m_PrefabInstance: {{fileID: 0}}
   m_PrefabAsset: {{fileID: 0}}
-  m_GameObject: {{fileID: 963194225}}
+  m_GameObject: {{fileID: 1648527731}}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -404,15 +523,15 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &963194227
+--- !u!4 &1648527734
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {{fileID: 0}}
   m_PrefabInstance: {{fileID: 0}}
   m_PrefabAsset: {{fileID: 0}}
-  m_GameObject: {{fileID: 963194225}}
+  m_GameObject: {{fileID: 1648527731}}
   serializedVersion: 2
-  m_LocalRotation: {{x: {rotation[0]}, y: {rotation[1]}, z: {rotation[2]}, w: {rotation[3]}}}
+  m_LocalRotation: {{x: {rotation[0]}, y: {rotation[1]}, z: {rotation[2]}, w: 1}}
   m_LocalPosition: {{x: {position[0]}, y: {position[1]}, z: {position[2]}}}
   m_LocalScale: {{x: {scale[0]}, y: {scale[1]}, z: {scale[2]}}}
   m_ConstrainProportionsScale: 0
@@ -424,8 +543,7 @@ Transform:
 
 # transform conponet goes to this list. Make a priority for components.
 def SceneRoots(object_id_list: list)-> str:
-    setting="""
---- !u!1660057539 &9223372036854775807
+    setting="""--- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
@@ -435,3 +553,27 @@ SceneRoots:
 
     return setting
 # camera->light->gameobject
+
+if __name__ == "__main__":
+    id_list: list[int] = []
+    with open("result.unity", "w", encoding='utf-8') as f:
+        f.write(init())
+        f.write(OcclusionCullingSettings())
+        f.write(RenderSettings())
+        f.write(LightmapSettings())
+        f.write(NavMeshSettings())
+
+        for i in range(10):
+            object_setting, object_id = add_sphere(f"Sphere_{i}", position=[i, 0, 0])
+            id_list.append(object_id)
+            f.write(object_setting)
+        
+        light_setting, light_id = add_light()
+        f.write(light_setting)
+        id_list.insert(0, light_id)
+
+        camera_setting, camera_id = add_camera()
+        f.write(camera_setting)
+        id_list.insert(0, camera_id)
+
+        f.write(SceneRoots(id_list))
